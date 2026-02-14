@@ -1,0 +1,91 @@
+id,topic,difficulty,text,option_a,option_b,option_c,option_d,correct_option
+1,Python,easy,Python easy question 1: choose the best answer.,Python concept A1,Python concept B1,Python concept C1,Python concept D1,d
+2,Python,easy,Python easy question 2: choose the best answer.,Python concept A2,Python concept B2,Python concept C2,Python concept D2,a
+3,Python,easy,Python easy question 3: choose the best answer.,Python concept A3,Python concept B3,Python concept C3,Python concept D3,b
+4,Python,easy,Python easy question 4: choose the best answer.,Python concept A4,Python concept B4,Python concept C4,Python concept D4,c
+5,Python,easy,Python easy question 5: choose the best answer.,Python concept A5,Python concept B5,Python concept C5,Python concept D5,d
+6,Python,easy,Python easy question 6: choose the best answer.,Python concept A6,Python concept B6,Python concept C6,Python concept D6,a
+7,Python,easy,Python easy question 7: choose the best answer.,Python concept A7,Python concept B7,Python concept C7,Python concept D7,b
+8,Python,easy,Python easy question 8: choose the best answer.,Python concept A8,Python concept B8,Python concept C8,Python concept D8,c
+9,Python,easy,Python easy question 9: choose the best answer.,Python concept A9,Python concept B9,Python concept C9,Python concept D9,d
+10,Python,easy,Python easy question 10: choose the best answer.,Python concept A10,Python concept B10,Python concept C10,Python concept D10,a
+11,Python,medium,Python medium question 1: choose the best answer.,Python concept A1,Python concept B1,Python concept C1,Python concept D1,b
+12,Python,medium,Python medium question 2: choose the best answer.,Python concept A2,Python concept B2,Python concept C2,Python concept D2,c
+13,Python,medium,Python medium question 3: choose the best answer.,Python concept A3,Python concept B3,Python concept C3,Python concept D3,d
+14,Python,medium,Python medium question 4: choose the best answer.,Python concept A4,Python concept B4,Python concept C4,Python concept D4,a
+15,Python,medium,Python medium question 5: choose the best answer.,Python concept A5,Python concept B5,Python concept C5,Python concept D5,b
+16,Python,medium,Python medium question 6: choose the best answer.,Python concept A6,Python concept B6,Python concept C6,Python concept D6,c
+17,Python,medium,Python medium question 7: choose the best answer.,Python concept A7,Python concept B7,Python concept C7,Python concept D7,d
+18,Python,medium,Python medium question 8: choose the best answer.,Python concept A8,Python concept B8,Python concept C8,Python concept D8,a
+19,Python,medium,Python medium question 9: choose the best answer.,Python concept A9,Python concept B9,Python concept C9,Python concept D9,b
+20,Python,medium,Python medium question 10: choose the best answer.,Python concept A10,Python concept B10,Python concept C10,Python concept D10,c
+21,Python,hard,Python hard question 1: choose the best answer.,Python concept A1,Python concept B1,Python concept C1,Python concept D1,d
+22,Python,hard,Python hard question 2: choose the best answer.,Python concept A2,Python concept B2,Python concept C2,Python concept D2,a
+23,Python,hard,Python hard question 3: choose the best answer.,Python concept A3,Python concept B3,Python concept C3,Python concept D3,b
+24,Python,hard,Python hard question 4: choose the best answer.,Python concept A4,Python concept B4,Python concept C4,Python concept D4,c
+25,Python,hard,Python hard question 5: choose the best answer.,Python concept A5,Python concept B5,Python concept C5,Python concept D5,d
+26,Python,hard,Python hard question 6: choose the best answer.,Python concept A6,Python concept B6,Python concept C6,Python concept D6,a
+27,Python,hard,Python hard question 7: choose the best answer.,Python concept A7,Python concept B7,Python concept C7,Python concept D7,b
+28,Python,hard,Python hard question 8: choose the best answer.,Python concept A8,Python concept B8,Python concept C8,Python concept D8,c
+29,Python,hard,Python hard question 9: choose the best answer.,Python concept A9,Python concept B9,Python concept C9,Python concept D9,d
+30,Python,hard,Python hard question 10: choose the best answer.,Python concept A10,Python concept B10,Python concept C10,Python concept D10,a
+31,JavaScript,easy,JavaScript easy question 1: choose the best answer.,JavaScript concept A1,JavaScript concept B1,JavaScript concept C1,JavaScript concept D1,d
+32,JavaScript,easy,JavaScript easy question 2: choose the best answer.,JavaScript concept A2,JavaScript concept B2,JavaScript concept C2,JavaScript concept D2,a
+33,JavaScript,easy,JavaScript easy question 3: choose the best answer.,JavaScript concept A3,JavaScript concept B3,JavaScript concept C3,JavaScript concept D3,b
+34,JavaScript,easy,JavaScript easy question 4: choose the best answer.,JavaScript concept A4,JavaScript concept B4,JavaScript concept C4,JavaScript concept D4,c
+35,JavaScript,easy,JavaScript easy question 5: choose the best answer.,JavaScript concept A5,JavaScript concept B5,JavaScript concept C5,JavaScript concept D5,d
+36,JavaScript,easy,JavaScript easy question 6: choose the best answer.,JavaScript concept A6,JavaScript concept B6,JavaScript concept C6,JavaScript concept D6,a
+37,JavaScript,easy,JavaScript easy question 7: choose the best answer.,JavaScript concept A7,JavaScript concept B7,JavaScript concept C7,JavaScript concept D7,b
+38,JavaScript,easy,JavaScript easy question 8: choose the best answer.,JavaScript concept A8,JavaScript concept B8,JavaScript concept C8,JavaScript concept D8,c
+39,JavaScript,easy,JavaScript easy question 9: choose the best answer.,JavaScript concept A9,JavaScript concept B9,JavaScript concept C9,JavaScript concept D9,d
+40,JavaScript,easy,JavaScript easy question 10: choose the best answer.,JavaScript concept A10,JavaScript concept B10,JavaScript concept C10,JavaScript concept D10,a
+41,JavaScript,medium,JavaScript medium question 1: choose the best answer.,JavaScript concept A1,JavaScript concept B1,JavaScript concept C1,JavaScript concept D1,b
+42,JavaScript,medium,JavaScript medium question 2: choose the best answer.,JavaScript concept A2,JavaScript concept B2,JavaScript concept C2,JavaScript concept D2,c
+43,JavaScript,medium,JavaScript medium question 3: choose the best answer.,JavaScript concept A3,JavaScript concept B3,JavaScript concept C3,JavaScript concept D3,d
+44,JavaScript,medium,JavaScript medium question 4: choose the best answer.,JavaScript concept A4,JavaScript concept B4,JavaScript concept C4,JavaScript concept D4,a
+45,JavaScript,medium,JavaScript medium question 5: choose the best answer.,JavaScript concept A5,JavaScript concept B5,JavaScript concept C5,JavaScript concept D5,b
+46,JavaScript,medium,JavaScript medium question 6: choose the best answer.,JavaScript concept A6,JavaScript concept B6,JavaScript concept C6,JavaScript concept D6,c
+47,JavaScript,medium,JavaScript medium question 7: choose the best answer.,JavaScript concept A7,JavaScript concept B7,JavaScript concept C7,JavaScript concept D7,d
+48,JavaScript,medium,JavaScript medium question 8: choose the best answer.,JavaScript concept A8,JavaScript concept B8,JavaScript concept C8,JavaScript concept D8,a
+49,JavaScript,medium,JavaScript medium question 9: choose the best answer.,JavaScript concept A9,JavaScript concept B9,JavaScript concept C9,JavaScript concept D9,b
+50,JavaScript,medium,JavaScript medium question 10: choose the best answer.,JavaScript concept A10,JavaScript concept B10,JavaScript concept C10,JavaScript concept D10,c
+51,JavaScript,hard,JavaScript hard question 1: choose the best answer.,JavaScript concept A1,JavaScript concept B1,JavaScript concept C1,JavaScript concept D1,d
+52,JavaScript,hard,JavaScript hard question 2: choose the best answer.,JavaScript concept A2,JavaScript concept B2,JavaScript concept C2,JavaScript concept D2,a
+53,JavaScript,hard,JavaScript hard question 3: choose the best answer.,JavaScript concept A3,JavaScript concept B3,JavaScript concept C3,JavaScript concept D3,b
+54,JavaScript,hard,JavaScript hard question 4: choose the best answer.,JavaScript concept A4,JavaScript concept B4,JavaScript concept C4,JavaScript concept D4,c
+55,JavaScript,hard,JavaScript hard question 5: choose the best answer.,JavaScript concept A5,JavaScript concept B5,JavaScript concept C5,JavaScript concept D5,d
+56,JavaScript,hard,JavaScript hard question 6: choose the best answer.,JavaScript concept A6,JavaScript concept B6,JavaScript concept C6,JavaScript concept D6,a
+57,JavaScript,hard,JavaScript hard question 7: choose the best answer.,JavaScript concept A7,JavaScript concept B7,JavaScript concept C7,JavaScript concept D7,b
+58,JavaScript,hard,JavaScript hard question 8: choose the best answer.,JavaScript concept A8,JavaScript concept B8,JavaScript concept C8,JavaScript concept D8,c
+59,JavaScript,hard,JavaScript hard question 9: choose the best answer.,JavaScript concept A9,JavaScript concept B9,JavaScript concept C9,JavaScript concept D9,d
+60,JavaScript,hard,JavaScript hard question 10: choose the best answer.,JavaScript concept A10,JavaScript concept B10,JavaScript concept C10,JavaScript concept D10,a
+61,Data Science,easy,Data Science easy question 1: choose the best answer.,Data Science concept A1,Data Science concept B1,Data Science concept C1,Data Science concept D1,b
+62,Data Science,easy,Data Science easy question 2: choose the best answer.,Data Science concept A2,Data Science concept B2,Data Science concept C2,Data Science concept D2,c
+63,Data Science,easy,Data Science easy question 3: choose the best answer.,Data Science concept A3,Data Science concept B3,Data Science concept C3,Data Science concept D3,d
+64,Data Science,easy,Data Science easy question 4: choose the best answer.,Data Science concept A4,Data Science concept B4,Data Science concept C4,Data Science concept D4,a
+65,Data Science,easy,Data Science easy question 5: choose the best answer.,Data Science concept A5,Data Science concept B5,Data Science concept C5,Data Science concept D5,b
+66,Data Science,easy,Data Science easy question 6: choose the best answer.,Data Science concept A6,Data Science concept B6,Data Science concept C6,Data Science concept D6,c
+67,Data Science,easy,Data Science easy question 7: choose the best answer.,Data Science concept A7,Data Science concept B7,Data Science concept C7,Data Science concept D7,d
+68,Data Science,easy,Data Science easy question 8: choose the best answer.,Data Science concept A8,Data Science concept B8,Data Science concept C8,Data Science concept D8,a
+69,Data Science,easy,Data Science easy question 9: choose the best answer.,Data Science concept A9,Data Science concept B9,Data Science concept C9,Data Science concept D9,b
+70,Data Science,easy,Data Science easy question 10: choose the best answer.,Data Science concept A10,Data Science concept B10,Data Science concept C10,Data Science concept D10,c
+71,Data Science,medium,Data Science medium question 1: choose the best answer.,Data Science concept A1,Data Science concept B1,Data Science concept C1,Data Science concept D1,d
+72,Data Science,medium,Data Science medium question 2: choose the best answer.,Data Science concept A2,Data Science concept B2,Data Science concept C2,Data Science concept D2,a
+73,Data Science,medium,Data Science medium question 3: choose the best answer.,Data Science concept A3,Data Science concept B3,Data Science concept C3,Data Science concept D3,b
+74,Data Science,medium,Data Science medium question 4: choose the best answer.,Data Science concept A4,Data Science concept B4,Data Science concept C4,Data Science concept D4,c
+75,Data Science,medium,Data Science medium question 5: choose the best answer.,Data Science concept A5,Data Science concept B5,Data Science concept C5,Data Science concept D5,d
+76,Data Science,medium,Data Science medium question 6: choose the best answer.,Data Science concept A6,Data Science concept B6,Data Science concept C6,Data Science concept D6,a
+77,Data Science,medium,Data Science medium question 7: choose the best answer.,Data Science concept A7,Data Science concept B7,Data Science concept C7,Data Science concept D7,b
+78,Data Science,medium,Data Science medium question 8: choose the best answer.,Data Science concept A8,Data Science concept B8,Data Science concept C8,Data Science concept D8,c
+79,Data Science,medium,Data Science medium question 9: choose the best answer.,Data Science concept A9,Data Science concept B9,Data Science concept C9,Data Science concept D9,d
+80,Data Science,medium,Data Science medium question 10: choose the best answer.,Data Science concept A10,Data Science concept B10,Data Science concept C10,Data Science concept D10,a
+81,Data Science,hard,Data Science hard question 1: choose the best answer.,Data Science concept A1,Data Science concept B1,Data Science concept C1,Data Science concept D1,b
+82,Data Science,hard,Data Science hard question 2: choose the best answer.,Data Science concept A2,Data Science concept B2,Data Science concept C2,Data Science concept D2,c
+83,Data Science,hard,Data Science hard question 3: choose the best answer.,Data Science concept A3,Data Science concept B3,Data Science concept C3,Data Science concept D3,d
+84,Data Science,hard,Data Science hard question 4: choose the best answer.,Data Science concept A4,Data Science concept B4,Data Science concept C4,Data Science concept D4,a
+85,Data Science,hard,Data Science hard question 5: choose the best answer.,Data Science concept A5,Data Science concept B5,Data Science concept C5,Data Science concept D5,b
+86,Data Science,hard,Data Science hard question 6: choose the best answer.,Data Science concept A6,Data Science concept B6,Data Science concept C6,Data Science concept D6,c
+87,Data Science,hard,Data Science hard question 7: choose the best answer.,Data Science concept A7,Data Science concept B7,Data Science concept C7,Data Science concept D7,d
+88,Data Science,hard,Data Science hard question 8: choose the best answer.,Data Science concept A8,Data Science concept B8,Data Science concept C8,Data Science concept D8,a
+89,Data Science,hard,Data Science hard question 9: choose the best answer.,Data Science concept A9,Data Science concept B9,Data Science concept C9,Data Science concept D9,b
+90,Data Science,hard,Data Science hard question 10: choose the best answer.,Data Science concept A10,Data Science concept B10,Data Science concept C10,Data Science concept D10,c

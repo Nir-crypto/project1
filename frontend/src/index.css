@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-gradient: linear-gradient(120deg, #0f172a 0%, #1d4ed8 45%, #0ea5e9 100%);
+}
+
+body {
+  min-height: 100vh;
+  color: #0f172a;
+}
+
+.fade-in {
+  animation: fadeIn 0.35s ease-in-out;
+}
+
+.slide-up {
+  animation: slideUp 0.35s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

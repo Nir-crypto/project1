@@ -17,7 +17,7 @@ class QuestionPublicSerializer(serializers.ModelSerializer):
 
 
 class AssessmentStartSerializer(serializers.Serializer):
-    interest_id = serializers.IntegerField()
+    selected_course_id = serializers.IntegerField()
 
 
 class AssessmentAnswerSerializer(serializers.Serializer):
@@ -39,3 +39,8 @@ class FinalAnswerItemSerializer(serializers.Serializer):
 class FinalAssessmentSubmitSerializer(serializers.Serializer):
     course_id = serializers.IntegerField()
     answers = FinalAnswerItemSerializer(many=True)
+    final_attempt_id = serializers.IntegerField(required=False)
+
+
+class FinalRetrySerializer(serializers.Serializer):
+    course_id = serializers.IntegerField()

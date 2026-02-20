@@ -18,7 +18,8 @@ export default function LoginPage() {
       toast.success('Login successful.');
       navigate('/dashboard');
     } catch (error) {
-      toast.error(error?.message || 'Invalid email or password.');
+      const detail = error.response?.data?.detail || error.message || 'Invalid email or password.';
+      toast.error(typeof detail === 'string' ? detail : 'Invalid email or password.');
     } finally {
       setLoading(false);
     }
@@ -26,7 +27,7 @@ export default function LoginPage() {
 
   return (
     <div className="max-w-md mx-auto px-4 py-12">
-      <form onSubmit={submit} className="bg-white rounded-2xl p-8 shadow-card slide-up">
+      <form onSubmit={submit} className="rounded-2xl border border-sky-100 bg-gradient-to-br from-white via-sky-50 to-amber-50 p-8 shadow-card slide-up">
         <h2 className="text-2xl font-bold text-slate-900">Login</h2>
         <p className="text-slate-600 mt-1">Continue your adaptive learning journey.</p>
 
@@ -40,7 +41,7 @@ export default function LoginPage() {
           <input type="password" className="w-full border border-slate-300 rounded-lg px-3 py-2" value={form.password} onChange={(e) => setForm((prev) => ({ ...prev, password: e.target.value }))} required />
         </div>
 
-        <button disabled={loading} type="submit" className="mt-6 w-full py-3 rounded-xl bg-brand-600 text-white font-semibold disabled:bg-slate-400">
+        <button disabled={loading} type="submit" className="mt-6 w-full py-3 rounded-xl bg-orange-600 text-white font-semibold disabled:bg-slate-400">
           {loading ? 'Logging in...' : 'Login'}
         </button>
 

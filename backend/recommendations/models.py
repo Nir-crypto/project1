@@ -27,11 +27,17 @@ class FeedbackQuestion(models.Model):
 
 
 class FeedbackResponse(models.Model):
+    FEEDBACK_TYPE_CHOICES = (
+        ('PASS_FEEDBACK', 'PASS_FEEDBACK'),
+        ('FAIL_DIFFICULTY', 'FAIL_DIFFICULTY'),
+    )
+
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='feedback_responses')
     course = models.ForeignKey(Course, on_delete=models.CASCADE, related_name='feedback_responses')
     final_attempt = models.ForeignKey(FinalAssessmentAttempt, on_delete=models.CASCADE, related_name='feedback_responses')
     responses = models.JSONField(default=dict)
     comment = models.TextField(blank=True)
+    feedback_type = models.CharField(max_length=20, choices=FEEDBACK_TYPE_CHOICES, default='PASS_FEEDBACK')
     created_at = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):

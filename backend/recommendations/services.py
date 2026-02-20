@@ -58,7 +58,7 @@ def _content_only_recommend(topic, level, top_k=5):
     return results
 
 
-def infer_level_and_recommend(topic, correct_count, total_questions, total_time, correctness):
+def infer_level_and_recommend(topic, correct_count, total_questions, total_time, correctness, top_k=3):
     total_questions = max(total_questions, 1)
     avg_score = (correct_count / total_questions) * 100
     avg_time = total_time / total_questions
@@ -88,10 +88,10 @@ def infer_level_and_recommend(topic, correct_count, total_questions, total_time,
             avg_time=avg_time,
             consistency=consistency,
             overall_points=overall_points,
-            top_k=5,
+            top_k=top_k,
         )
     except Exception:
         level = _level_from_points(overall_points)
-        courses = _content_only_recommend(topic, level, top_k=5)
+        courses = _content_only_recommend(topic, level, top_k=top_k)
 
     return level, courses

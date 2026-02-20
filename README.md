@@ -101,9 +101,13 @@ Auth:
 
 Dashboard:
 - `GET /api/dashboard`
+- `GET /api/dashboard/status` (includes `pending_final`)
+
+Courses:
+- `GET /api/courses`
 
 Adaptive assessment:
-- `POST /api/assessment/start`
+- `POST /api/assessment/start` (`selected_course_id` required)
 - `POST /api/assessment/answer`
 
 Result:
@@ -112,10 +116,16 @@ Result:
 Final assessment:
 - `POST /api/final/start`
 - `POST /api/final/submit`
+- `POST /api/final/retry`
 
 Feedback:
 - `GET /api/feedback/questions`
 - `POST /api/feedback/submit`
+- `GET /api/feedback/fail-options`
+- `POST /api/feedback/fail-submit`
+
+Roadmap:
+- `GET /api/roadmap/<course_id>`
 
 ## 7) API Smoke Test
 After backend is running and DB is seeded:
@@ -164,6 +174,10 @@ At assessment end:
 
 ## 10) Notes
 - Registration requires at least 2 interests.
+- Registration now includes `phone_number` and `status` (`Student/Working/Unemployed/Other`).
 - Login uses stored DB credentials with JWT.
+- Assessment flow: Dashboard -> Select Course -> Adaptive Quiz.
+- Dashboard exposes `Final Assessment Pending` and supports resume flow.
+- On final fail, user must submit difficulty feedback before retry.
 - Feedback submission is allowed only after passing final assessment for a course.
 - `overall_points` is the single result metric shown on UI.

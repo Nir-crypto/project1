@@ -17,9 +17,17 @@ class UserProfile(models.Model):
         ('Intermediate', 'Intermediate'),
         ('Advanced', 'Advanced'),
     )
+    STATUS_CHOICES = (
+        ('Student', 'Student'),
+        ('Working', 'Working'),
+        ('Unemployed', 'Unemployed'),
+        ('Other', 'Other'),
+    )
 
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name='profile')
     name = models.CharField(max_length=120)
+    phone_number = models.CharField(max_length=20, blank=True)
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default='Student')
     interests = models.ManyToManyField(Interest, related_name='users')
     current_level = models.CharField(max_length=20, choices=LEVEL_CHOICES, default='Beginner')
 

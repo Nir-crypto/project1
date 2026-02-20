@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 :root {
-  --bg-gradient: linear-gradient(120deg, #0f172a 0%, #1d4ed8 45%, #0ea5e9 100%);
+  --bg-gradient: linear-gradient(120deg, #0f172a 0%, #1d4ed8 38%, #0ea5e9 64%, #22c55e 100%);
+  --surface-gradient: linear-gradient(180deg, #fff7ed 0%, #f8fafc 45%, #eff6ff 100%);
 }
 
 body {
   min-height: 100vh;
   color: #0f172a;
+  background: var(--surface-gradient);
 }
 
 .fade-in {

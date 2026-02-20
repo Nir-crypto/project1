@@ -14,20 +14,19 @@ class Command(BaseCommand):
             self.stdout.write(self.style.ERROR(f'courses.csv not found at {courses_path}'))
             return
 
+        Course.objects.all().delete()
+
         created = 0
         with courses_path.open('r', encoding='utf-8') as csvfile:
             reader = csv.DictReader(csvfile)
             for row in reader:
-                _, is_created = Course.objects.get_or_create(
+                Course.objects.create(
                     title=row['title'],
-                    defaults={
-                        'topic': row['topic'],
-                        'difficulty': row['difficulty'],
-                        'description': row['description'],
-                        'url': row['url'],
-                    },
+                    topic=row['topic'],
+                    difficulty=row['difficulty'],
+                    description=row['description'],
+                    url=row['url'],
                 )
-                if is_created:
-                    created += 1
+                created += 1
 
         self.stdout.write(self.style.SUCCESS(f'Courses seeded. Created: {created}'))

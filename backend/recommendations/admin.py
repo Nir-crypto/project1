@@ -14,4 +14,4 @@ class FeedbackQuestionAdmin(admin.ModelAdmin):
 
 @admin.register(FeedbackResponse)
 class FeedbackResponseAdmin(admin.ModelAdmin):
-    list_display = ('id', 'user', 'course', 'final_attempt', 'created_at')
+    list_display = ('id', 'user', 'course', 'final_attempt', 'feedback_type', 'created_at')

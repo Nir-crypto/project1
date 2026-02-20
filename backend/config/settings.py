@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     'accounts',
     'learning',
     'recommendations',
+    'roadmaps',
 ]
 
 MIDDLEWARE = [
@@ -115,6 +116,6 @@ CORS_ALLOW_ALL_ORIGINS = os.getenv('CORS_ALLOW_ALL', 'True').lower() == 'true'
 CORS_ALLOWED_ORIGINS = [origin.strip() for origin in os.getenv('CORS_ALLOWED_ORIGINS', '').split(',') if origin.strip()]
 
 ASSESSMENT_TOTAL_QUESTIONS = int(os.getenv('ASSESSMENT_TOTAL_QUESTIONS', '10'))
-FINAL_ASSESSMENT_QUESTIONS = int(os.getenv('FINAL_ASSESSMENT_QUESTIONS', '5'))
+FINAL_ASSESSMENT_QUESTIONS = 10
 TARGET_TIME_PER_QUESTION = float(os.getenv('TARGET_TIME_PER_QUESTION', '20'))
 ML_ARTIFACT_DIR = os.getenv('ML_ARTIFACT_DIR', str((BASE_DIR.parent / 'ml' / 'artifacts').resolve()))

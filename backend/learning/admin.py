@@ -25,7 +25,7 @@ class QuestionAdmin(admin.ModelAdmin):
 
 @admin.register(AssessmentAttempt)
 class AssessmentAttemptAdmin(admin.ModelAdmin):
-    list_display = ('id', 'user', 'topic', 'current_difficulty', 'correct_count', 'overall_points', 'predicted_level')
+    list_display = ('id', 'user', 'selected_course', 'topic', 'current_difficulty', 'correct_count', 'overall_points', 'current_level')
     list_filter = ('topic', 'current_difficulty', 'predicted_level')
 
 

@@ -1,7 +1,7 @@
 ﻿import { useEffect, useState } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 import toast from 'react-hot-toast';
-import { getFeedbackQuestions, submitFeedback } from '../services/platformService';
+import api from '../api/axios';
 
 export default function FeedbackPage() {
   const [params] = useSearchParams();
@@ -23,10 +23,10 @@ export default function FeedbackPage() {
 
     const loadQuestions = async () => {
       try {
-        const data = await getFeedbackQuestions();
-        setQuestions(data);
-      } catch (error) {
-        toast.error(error?.message || 'Unable to load feedback questions.');
+        const res = await api.get('/feedback/questions');
+        setQuestions(res.data);
+      } catch {
+        toast.error('Unable to load feedback questions.');
       } finally {
         setLoading(false);
       }
@@ -43,11 +43,11 @@ export default function FeedbackPage() {
 
     setSubmitting(true);
     try {
-      await submitFeedback({ course_id: Number(courseId), responses, comment });
+      await api.post('/feedback/submit', { course_id: Number(courseId), responses, comment });
       setSubmitted(true);
       toast.success('Thanks for your feedback.');
     } catch (error) {
-      toast.error(error?.message || 'Could not submit feedback.');
+      toast.error(error.response?.data?.detail || 'Could not submit feedback.');
     } finally {
       setSubmitting(false);
     }

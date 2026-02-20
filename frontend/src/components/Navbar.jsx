@@ -11,13 +11,13 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-40 bg-white/85 backdrop-blur border-b border-slate-200">
+    <header className="sticky top-0 z-40 bg-gradient-to-r from-white/95 via-sky-50/95 to-amber-50/95 backdrop-blur border-b border-slate-200">
       <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-        <Link to="/dashboard" className="text-lg font-bold text-brand-700">Erudition Platform</Link>
+        <Link to="/dashboard" className="text-lg font-bold text-sky-700">Erudition Platform</Link>
         {isAuthenticated && (
           <button
             onClick={handleLogout}
-            className="px-4 py-2 text-sm rounded-lg bg-slate-900 text-white hover:bg-slate-700 transition"
+            className="px-4 py-2 text-sm rounded-lg bg-orange-600 text-white hover:bg-orange-700 transition"
           >
             Logout
           </button>

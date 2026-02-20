@@ -3,6 +3,7 @@ import os
 import random
 import string
 import sys
+import time
 import urllib.error
 import urllib.request
 
@@ -46,7 +47,7 @@ class ApiClient:
 
 def random_email():
     suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=8))
-    return f"smoke_{suffix}@example.com"
+    return f"smoke_{suffix}_{int(time.time() * 1000)}@example.com"
 
 
 def choose_option():
@@ -54,43 +55,49 @@ def choose_option():
 
 
 def main():
-    random.seed(42)
+    random.seed()
     client = ApiClient(BASE_URL)
 
-    print(f"[1/10] Fetching interests from {BASE_URL}/interests")
+    print(f"[1/11] Fetching interests from {BASE_URL}/interests")
     _, interests = client.request('GET', '/interests')
     if not isinstance(interests, list) or len(interests) < 2:
         raise ApiError('Expected at least 2 interests for registration.')
 
     selected_interest_ids = [interests[0]['id'], interests[1]['id']]
-    assessment_interest_id = interests[0]['id']
-
     email = random_email()
     register_payload = {
         'name': 'Smoke Tester',
         'email': email,
+        'phone_number': '+919876543210',
+        'status': 'Student',
         'password': 'SmokePass123',
         'interests': selected_interest_ids,
     }
-    print('[2/10] Registering test user')
+    print('[3/11] Registering test user')
     client.request('POST', '/auth/register', payload=register_payload)
 
-    print('[3/10] Logging in')
+    print('[4/11] Logging in')
     _, login_data = client.request('POST', '/auth/login', payload={'email': email, 'password': 'SmokePass123'})
     access_token = login_data.get('access')
     if not access_token:
         raise ApiError('Login did not return access token.')
 
-    print('[4/10] Verifying profile and dashboard')
+    print('[5/11] Verifying profile and dashboard status')
     client.request('GET', '/auth/me', token=access_token)
-    client.request('GET', '/dashboard', token=access_token)
+    client.request('GET', '/dashboard/status', token=access_token)
 
-    print('[5/10] Starting adaptive assessment')
+    print('[6/11] Fetching courses')
+    _, courses = client.request('GET', '/courses', token=access_token)
+    if not courses:
+        raise ApiError('Expected available courses.')
+    selected_course_id = courses[0]['id']
+
+    print('[7/11] Starting adaptive assessment by selected course')
     _, start_data = client.request(
         'POST',
         '/assessment/start',
         token=access_token,
-        payload={'interest_id': assessment_interest_id},
+        payload={'selected_course_id': selected_course_id},
     )
 
     attempt_id = start_data.get('attempt_id')
@@ -98,7 +105,7 @@ def main():
     if not attempt_id or not current_question:
         raise ApiError('Assessment start did not return attempt/question payload.')
 
-    print('[6/10] Answering adaptive questions until completion')
+    print('[8/11] Answering adaptive questions until completion')
     adaptive_result = None
     for _ in range(30):
         payload = {
@@ -118,7 +125,7 @@ def main():
     if not adaptive_result:
         raise ApiError('Adaptive assessment did not complete within loop guard.')
 
-    print('[7/10] Fetching result payload by attempt id')
+    print('[9/11] Fetching result payload by attempt id')
     _, result_data = client.request('GET', f'/result/{attempt_id}', token=access_token)
     recommended = result_data.get('recommended_courses', [])
     if not recommended:
@@ -126,7 +133,7 @@ def main():
 
     course_id = recommended[0]['id']
 
-    print('[8/10] Starting final assessment')
+    print('[10/11] Starting final assessment')
     _, final_start = client.request('POST', '/final/start', token=access_token, payload={'course_id': course_id})
     final_questions = final_start.get('questions', [])
     if not final_questions:
@@ -134,7 +141,7 @@ def main():
 
     answers = [{'question_id': q['id'], 'selected_option': choose_option()} for q in final_questions]
 
-    print('[9/10] Submitting final assessment')
+    print('[11/11] Submitting final assessment')
     _, final_submit = client.request(
         'POST',
         '/final/submit',
@@ -142,14 +149,10 @@ def main():
         payload={'course_id': course_id, 'answers': answers},
     )
 
-    passed = bool(final_submit.get('passed'))
-    if passed:
-        print('[10/10] Final passed -> submitting feedback')
+    if final_submit.get('passed'):
+        print('[12/12] Final passed -> submitting PASS feedback')
         _, feedback_questions = client.request('GET', '/feedback/questions', token=access_token)
-        response_payload = {
-            str(item['id']): (item.get('options') or ['N/A'])[0]
-            for item in feedback_questions
-        }
+        response_payload = {str(item['id']): (item.get('options') or ['N/A'])[0] for item in feedback_questions}
         client.request(
             'POST',
             '/feedback/submit',
@@ -160,12 +163,23 @@ def main():
                 'comment': 'Smoke test feedback submission.',
             },
         )
-        print('Smoke test completed: PASS (including feedback).')
+        print('Smoke test completed: PASS (pass flow validated).')
     else:
-        message = str(final_submit.get('message', ''))
-        if 'Try again' not in message:
-            raise ApiError('Expected fail message to include "Try again".')
-        print('Smoke test completed: PASS (final assessment fail path validated).')
+        print('[12/12] Final failed -> submit fail feedback then retry')
+        _, fail_opts = client.request('GET', '/feedback/fail-options', token=access_token)
+        chosen = fail_opts.get('options', ['Need more practice examples'])[0]
+        client.request(
+            'POST',
+            '/feedback/fail-submit',
+            token=access_token,
+            payload={
+                'course_id': course_id,
+                'final_attempt_id': final_submit['final_attempt_id'],
+                'selected_option': chosen,
+            },
+        )
+        client.request('POST', '/final/retry', token=access_token, payload={'course_id': course_id})
+        print('Smoke test completed: PASS (fail flow + retry validated).')
 
 
 if __name__ == '__main__':

@@ -10,6 +10,6 @@ class InterestAdmin(admin.ModelAdmin):
 
 @admin.register(UserProfile)
 class UserProfileAdmin(admin.ModelAdmin):
-    list_display = ('id', 'user', 'name', 'current_level')
+    list_display = ('id', 'user', 'name', 'phone_number', 'status', 'current_level')
     search_fields = ('user__email', 'name')
-    list_filter = ('current_level',)
+    list_filter = ('status', 'current_level')

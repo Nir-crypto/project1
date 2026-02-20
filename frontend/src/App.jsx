@@ -6,6 +6,7 @@ import LandingPage from './pages/LandingPage';
 import RegisterPage from './pages/RegisterPage';
 import LoginPage from './pages/LoginPage';
 import DashboardPage from './pages/DashboardPage';
+import SelectCoursePage from './pages/SelectCoursePage';
 import AssessmentPage from './pages/AssessmentPage';
 import ResultPage from './pages/ResultPage';
 import FinalAssessmentPage from './pages/FinalAssessmentPage';
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="/register" element={<RegisterPage />} />
         <Route path="/login" element={<LoginPage />} />
         <Route path="/dashboard" element={<ProtectedRoute><DashboardPage /></ProtectedRoute>} />
+        <Route path="/select-course" element={<ProtectedRoute><SelectCoursePage /></ProtectedRoute>} />
         <Route path="/assessment" element={<ProtectedRoute><AssessmentPage /></ProtectedRoute>} />
         <Route path="/result/:attemptId" element={<ProtectedRoute><ResultPage /></ProtectedRoute>} />
         <Route path="/final-assessment" element={<ProtectedRoute><FinalAssessmentPage /></ProtectedRoute>} />

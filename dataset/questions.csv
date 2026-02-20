@@ -1,91 +1,61 @@
 id,topic,difficulty,text,option_a,option_b,option_c,option_d,correct_option
-1,Python,easy,Python easy question 1: choose the best answer.,Python concept A1,Python concept B1,Python concept C1,Python concept D1,d
-2,Python,easy,Python easy question 2: choose the best answer.,Python concept A2,Python concept B2,Python concept C2,Python concept D2,a
-3,Python,easy,Python easy question 3: choose the best answer.,Python concept A3,Python concept B3,Python concept C3,Python concept D3,b
-4,Python,easy,Python easy question 4: choose the best answer.,Python concept A4,Python concept B4,Python concept C4,Python concept D4,c
-5,Python,easy,Python easy question 5: choose the best answer.,Python concept A5,Python concept B5,Python concept C5,Python concept D5,d
-6,Python,easy,Python easy question 6: choose the best answer.,Python concept A6,Python concept B6,Python concept C6,Python concept D6,a
-7,Python,easy,Python easy question 7: choose the best answer.,Python concept A7,Python concept B7,Python concept C7,Python concept D7,b
-8,Python,easy,Python easy question 8: choose the best answer.,Python concept A8,Python concept B8,Python concept C8,Python concept D8,c
-9,Python,easy,Python easy question 9: choose the best answer.,Python concept A9,Python concept B9,Python concept C9,Python concept D9,d
-10,Python,easy,Python easy question 10: choose the best answer.,Python concept A10,Python concept B10,Python concept C10,Python concept D10,a
-11,Python,medium,Python medium question 1: choose the best answer.,Python concept A1,Python concept B1,Python concept C1,Python concept D1,b
-12,Python,medium,Python medium question 2: choose the best answer.,Python concept A2,Python concept B2,Python concept C2,Python concept D2,c
-13,Python,medium,Python medium question 3: choose the best answer.,Python concept A3,Python concept B3,Python concept C3,Python concept D3,d
-14,Python,medium,Python medium question 4: choose the best answer.,Python concept A4,Python concept B4,Python concept C4,Python concept D4,a
-15,Python,medium,Python medium question 5: choose the best answer.,Python concept A5,Python concept B5,Python concept C5,Python concept D5,b
-16,Python,medium,Python medium question 6: choose the best answer.,Python concept A6,Python concept B6,Python concept C6,Python concept D6,c
-17,Python,medium,Python medium question 7: choose the best answer.,Python concept A7,Python concept B7,Python concept C7,Python concept D7,d
-18,Python,medium,Python medium question 8: choose the best answer.,Python concept A8,Python concept B8,Python concept C8,Python concept D8,a
-19,Python,medium,Python medium question 9: choose the best answer.,Python concept A9,Python concept B9,Python concept C9,Python concept D9,b
-20,Python,medium,Python medium question 10: choose the best answer.,Python concept A10,Python concept B10,Python concept C10,Python concept D10,c
-21,Python,hard,Python hard question 1: choose the best answer.,Python concept A1,Python concept B1,Python concept C1,Python concept D1,d
-22,Python,hard,Python hard question 2: choose the best answer.,Python concept A2,Python concept B2,Python concept C2,Python concept D2,a
-23,Python,hard,Python hard question 3: choose the best answer.,Python concept A3,Python concept B3,Python concept C3,Python concept D3,b
-24,Python,hard,Python hard question 4: choose the best answer.,Python concept A4,Python concept B4,Python concept C4,Python concept D4,c
-25,Python,hard,Python hard question 5: choose the best answer.,Python concept A5,Python concept B5,Python concept C5,Python concept D5,d
-26,Python,hard,Python hard question 6: choose the best answer.,Python concept A6,Python concept B6,Python concept C6,Python concept D6,a
-27,Python,hard,Python hard question 7: choose the best answer.,Python concept A7,Python concept B7,Python concept C7,Python concept D7,b
-28,Python,hard,Python hard question 8: choose the best answer.,Python concept A8,Python concept B8,Python concept C8,Python concept D8,c
-29,Python,hard,Python hard question 9: choose the best answer.,Python concept A9,Python concept B9,Python concept C9,Python concept D9,d
-30,Python,hard,Python hard question 10: choose the best answer.,Python concept A10,Python concept B10,Python concept C10,Python concept D10,a
-31,JavaScript,easy,JavaScript easy question 1: choose the best answer.,JavaScript concept A1,JavaScript concept B1,JavaScript concept C1,JavaScript concept D1,d
-32,JavaScript,easy,JavaScript easy question 2: choose the best answer.,JavaScript concept A2,JavaScript concept B2,JavaScript concept C2,JavaScript concept D2,a
-33,JavaScript,easy,JavaScript easy question 3: choose the best answer.,JavaScript concept A3,JavaScript concept B3,JavaScript concept C3,JavaScript concept D3,b
-34,JavaScript,easy,JavaScript easy question 4: choose the best answer.,JavaScript concept A4,JavaScript concept B4,JavaScript concept C4,JavaScript concept D4,c
-35,JavaScript,easy,JavaScript easy question 5: choose the best answer.,JavaScript concept A5,JavaScript concept B5,JavaScript concept C5,JavaScript concept D5,d
-36,JavaScript,easy,JavaScript easy question 6: choose the best answer.,JavaScript concept A6,JavaScript concept B6,JavaScript concept C6,JavaScript concept D6,a
-37,JavaScript,easy,JavaScript easy question 7: choose the best answer.,JavaScript concept A7,JavaScript concept B7,JavaScript concept C7,JavaScript concept D7,b
-38,JavaScript,easy,JavaScript easy question 8: choose the best answer.,JavaScript concept A8,JavaScript concept B8,JavaScript concept C8,JavaScript concept D8,c
-39,JavaScript,easy,JavaScript easy question 9: choose the best answer.,JavaScript concept A9,JavaScript concept B9,JavaScript concept C9,JavaScript concept D9,d
-40,JavaScript,easy,JavaScript easy question 10: choose the best answer.,JavaScript concept A10,JavaScript concept B10,JavaScript concept C10,JavaScript concept D10,a
-41,JavaScript,medium,JavaScript medium question 1: choose the best answer.,JavaScript concept A1,JavaScript concept B1,JavaScript concept C1,JavaScript concept D1,b
-42,JavaScript,medium,JavaScript medium question 2: choose the best answer.,JavaScript concept A2,JavaScript concept B2,JavaScript concept C2,JavaScript concept D2,c
-43,JavaScript,medium,JavaScript medium question 3: choose the best answer.,JavaScript concept A3,JavaScript concept B3,JavaScript concept C3,JavaScript concept D3,d
-44,JavaScript,medium,JavaScript medium question 4: choose the best answer.,JavaScript concept A4,JavaScript concept B4,JavaScript concept C4,JavaScript concept D4,a
-45,JavaScript,medium,JavaScript medium question 5: choose the best answer.,JavaScript concept A5,JavaScript concept B5,JavaScript concept C5,JavaScript concept D5,b
-46,JavaScript,medium,JavaScript medium question 6: choose the best answer.,JavaScript concept A6,JavaScript concept B6,JavaScript concept C6,JavaScript concept D6,c
-47,JavaScript,medium,JavaScript medium question 7: choose the best answer.,JavaScript concept A7,JavaScript concept B7,JavaScript concept C7,JavaScript concept D7,d
-48,JavaScript,medium,JavaScript medium question 8: choose the best answer.,JavaScript concept A8,JavaScript concept B8,JavaScript concept C8,JavaScript concept D8,a
-49,JavaScript,medium,JavaScript medium question 9: choose the best answer.,JavaScript concept A9,JavaScript concept B9,JavaScript concept C9,JavaScript concept D9,b
-50,JavaScript,medium,JavaScript medium question 10: choose the best answer.,JavaScript concept A10,JavaScript concept B10,JavaScript concept C10,JavaScript concept D10,c
-51,JavaScript,hard,JavaScript hard question 1: choose the best answer.,JavaScript concept A1,JavaScript concept B1,JavaScript concept C1,JavaScript concept D1,d
-52,JavaScript,hard,JavaScript hard question 2: choose the best answer.,JavaScript concept A2,JavaScript concept B2,JavaScript concept C2,JavaScript concept D2,a
-53,JavaScript,hard,JavaScript hard question 3: choose the best answer.,JavaScript concept A3,JavaScript concept B3,JavaScript concept C3,JavaScript concept D3,b
-54,JavaScript,hard,JavaScript hard question 4: choose the best answer.,JavaScript concept A4,JavaScript concept B4,JavaScript concept C4,JavaScript concept D4,c
-55,JavaScript,hard,JavaScript hard question 5: choose the best answer.,JavaScript concept A5,JavaScript concept B5,JavaScript concept C5,JavaScript concept D5,d
-56,JavaScript,hard,JavaScript hard question 6: choose the best answer.,JavaScript concept A6,JavaScript concept B6,JavaScript concept C6,JavaScript concept D6,a
-57,JavaScript,hard,JavaScript hard question 7: choose the best answer.,JavaScript concept A7,JavaScript concept B7,JavaScript concept C7,JavaScript concept D7,b
-58,JavaScript,hard,JavaScript hard question 8: choose the best answer.,JavaScript concept A8,JavaScript concept B8,JavaScript concept C8,JavaScript concept D8,c
-59,JavaScript,hard,JavaScript hard question 9: choose the best answer.,JavaScript concept A9,JavaScript concept B9,JavaScript concept C9,JavaScript concept D9,d
-60,JavaScript,hard,JavaScript hard question 10: choose the best answer.,JavaScript concept A10,JavaScript concept B10,JavaScript concept C10,JavaScript concept D10,a
-61,Data Science,easy,Data Science easy question 1: choose the best answer.,Data Science concept A1,Data Science concept B1,Data Science concept C1,Data Science concept D1,b
-62,Data Science,easy,Data Science easy question 2: choose the best answer.,Data Science concept A2,Data Science concept B2,Data Science concept C2,Data Science concept D2,c
-63,Data Science,easy,Data Science easy question 3: choose the best answer.,Data Science concept A3,Data Science concept B3,Data Science concept C3,Data Science concept D3,d
-64,Data Science,easy,Data Science easy question 4: choose the best answer.,Data Science concept A4,Data Science concept B4,Data Science concept C4,Data Science concept D4,a
-65,Data Science,easy,Data Science easy question 5: choose the best answer.,Data Science concept A5,Data Science concept B5,Data Science concept C5,Data Science concept D5,b
-66,Data Science,easy,Data Science easy question 6: choose the best answer.,Data Science concept A6,Data Science concept B6,Data Science concept C6,Data Science concept D6,c
-67,Data Science,easy,Data Science easy question 7: choose the best answer.,Data Science concept A7,Data Science concept B7,Data Science concept C7,Data Science concept D7,d
-68,Data Science,easy,Data Science easy question 8: choose the best answer.,Data Science concept A8,Data Science concept B8,Data Science concept C8,Data Science concept D8,a
-69,Data Science,easy,Data Science easy question 9: choose the best answer.,Data Science concept A9,Data Science concept B9,Data Science concept C9,Data Science concept D9,b
-70,Data Science,easy,Data Science easy question 10: choose the best answer.,Data Science concept A10,Data Science concept B10,Data Science concept C10,Data Science concept D10,c
-71,Data Science,medium,Data Science medium question 1: choose the best answer.,Data Science concept A1,Data Science concept B1,Data Science concept C1,Data Science concept D1,d
-72,Data Science,medium,Data Science medium question 2: choose the best answer.,Data Science concept A2,Data Science concept B2,Data Science concept C2,Data Science concept D2,a
-73,Data Science,medium,Data Science medium question 3: choose the best answer.,Data Science concept A3,Data Science concept B3,Data Science concept C3,Data Science concept D3,b
-74,Data Science,medium,Data Science medium question 4: choose the best answer.,Data Science concept A4,Data Science concept B4,Data Science concept C4,Data Science concept D4,c
-75,Data Science,medium,Data Science medium question 5: choose the best answer.,Data Science concept A5,Data Science concept B5,Data Science concept C5,Data Science concept D5,d
-76,Data Science,medium,Data Science medium question 6: choose the best answer.,Data Science concept A6,Data Science concept B6,Data Science concept C6,Data Science concept D6,a
-77,Data Science,medium,Data Science medium question 7: choose the best answer.,Data Science concept A7,Data Science concept B7,Data Science concept C7,Data Science concept D7,b
-78,Data Science,medium,Data Science medium question 8: choose the best answer.,Data Science concept A8,Data Science concept B8,Data Science concept C8,Data Science concept D8,c
-79,Data Science,medium,Data Science medium question 9: choose the best answer.,Data Science concept A9,Data Science concept B9,Data Science concept C9,Data Science concept D9,d
-80,Data Science,medium,Data Science medium question 10: choose the best answer.,Data Science concept A10,Data Science concept B10,Data Science concept C10,Data Science concept D10,a
-81,Data Science,hard,Data Science hard question 1: choose the best answer.,Data Science concept A1,Data Science concept B1,Data Science concept C1,Data Science concept D1,b
-82,Data Science,hard,Data Science hard question 2: choose the best answer.,Data Science concept A2,Data Science concept B2,Data Science concept C2,Data Science concept D2,c
-83,Data Science,hard,Data Science hard question 3: choose the best answer.,Data Science concept A3,Data Science concept B3,Data Science concept C3,Data Science concept D3,d
-84,Data Science,hard,Data Science hard question 4: choose the best answer.,Data Science concept A4,Data Science concept B4,Data Science concept C4,Data Science concept D4,a
-85,Data Science,hard,Data Science hard question 5: choose the best answer.,Data Science concept A5,Data Science concept B5,Data Science concept C5,Data Science concept D5,b
-86,Data Science,hard,Data Science hard question 6: choose the best answer.,Data Science concept A6,Data Science concept B6,Data Science concept C6,Data Science concept D6,c
-87,Data Science,hard,Data Science hard question 7: choose the best answer.,Data Science concept A7,Data Science concept B7,Data Science concept C7,Data Science concept D7,d
-88,Data Science,hard,Data Science hard question 8: choose the best answer.,Data Science concept A8,Data Science concept B8,Data Science concept C8,Data Science concept D8,a
-89,Data Science,hard,Data Science hard question 9: choose the best answer.,Data Science concept A9,Data Science concept B9,Data Science concept C9,Data Science concept D9,b
-90,Data Science,hard,Data Science hard question 10: choose the best answer.,Data Science concept A10,Data Science concept B10,Data Science concept C10,Data Science concept D10,c
+1,Web Development,easy,What does HTML stand for,HyperText Markup Language,HighText Machine Language,Hyperlinks Text Markup Logic,Home Tool Markup Language,a
+2,Web Development,easy,Which CSS property changes text color,font-color,color,text-style,foreground,b
+3,Web Development,easy,Which tag creates a hyperlink,img,a,link,href,b
+4,Web Development,easy,Which tag is used to include JavaScript code,script,style,javascript,js,a
+5,Web Development,easy,Which status code means Not Found,200,301,404,500,c
+6,Web Development,easy,Which CSS unit is relative to the root font size,px,em,rem,vw,c
+7,Web Development,easy,Which CSS property enables flex layout,flex-direction,display,position,float,b
+8,Web Development,easy,Which image attribute improves accessibility,title,src,alt,name,c
+9,Web Development,easy,Which protocol secures data for websites,FTP,SMTP,HTTPS,SSH,c
+10,Web Development,easy,Which HTTP method is commonly used to fetch data,POST,GET,PUT,PATCH,b
+11,Web Development,medium,Which CSS feature is mainly used for responsive breakpoints,media queries,keyframes,transforms,variables,a
+12,Web Development,medium,Which web storage persists after closing the browser tab,sessionStorage,memory cache,localStorage,cookie,c
+13,Web Development,medium,Which header helps reduce XSS risk by restricting sources,ETag,Content-Security-Policy,Accept-Encoding,Server,b
+14,Web Development,medium,Which HTTP method is idempotent for full resource update,POST,PUT,PATCH,CONNECT,b
+15,Web Development,medium,What is the main purpose of package.json in a Node project,Store browser cookies,Manage dependencies and scripts,Compile CSS automatically,Host static files,b
+16,Web Development,hard,In CSS specificity which selector has highest priority,type selector,class selector,id selector,universal selector,c
+17,Web Development,hard,What is the main goal of debouncing in JavaScript,Run function continuously,Delay and reduce rapid calls,Convert sync code to async,Cache API responses,b
+18,Web Development,hard,What does SameSite Strict do for cookies,Always send cross site,Disable cookie encryption,Block cookie on cross site requests,Delete cookie after logout,c
+19,Web Development,hard,Why is code splitting used in frontend apps,Increase bundle size,Reduce initial load size,Remove caching support,Replace minification,b
+20,Web Development,hard,When does a browser usually send a CORS preflight request,For same origin GET,For simple form POST,For cross origin requests with custom headers,Never,c
+21,Python,easy,Which keyword defines a function in Python,function,def,func,lambda,b
+22,Python,easy,Which data type is mutable,list,tuple,str,int,a
+23,Python,easy,What is the output type of input in Python 3,int,str,float,bool,b
+24,Python,easy,Which operator is used for floor division,/,//,%,**,b
+25,Python,easy,Which statement is used to handle exceptions,try except,if else,for loop,with,a
+26,Python,easy,How do you start a comment in Python,/*,#,//,--,b
+27,Python,easy,Which method adds an item to the end of a list,insert,append,add,push,b
+28,Python,easy,Which value represents absence of value in Python,void,nil,null,None,d
+29,Python,easy,Which function returns the length of a sequence,size,len,count,length,b
+30,Python,easy,Which loop iterates over each item in a list,while,repeat,for,do while,c
+31,Python,medium,What is list comprehension mainly used for,Creating classes,Building lists from iterables,Connecting databases,Handling threads,b
+32,Python,medium,What does the with statement ensure in file handling,File opens faster,Automatic resource cleanup,Data is encrypted,Variables are global,b
+33,Python,medium,Which module is commonly used for regular expressions,string,re,regexpy,matcher,b
+34,Python,medium,What is the output of range 2 7 2 converted to list,2 4 6 8,2 4 6,1 3 5 7,2 3 4 5,b
+35,Python,medium,Which statement about tuples is correct,Tuples are mutable,Tuples allow item reassignment,Tuples are immutable,Tuples can only store numbers,c
+36,Python,hard,What is the purpose of a decorator in Python,Define database schema,Modify function behavior,Create virtual environment,Sort dictionaries,b
+37,Python,hard,What does the GIL affect in CPython,File permissions,Multithreaded CPU bound parallelism,JSON parsing support,Type hint validation,b
+38,Python,hard,Which method is called when an object is created,new,init,create,build,b
+39,Python,hard,What is a generator in Python,A class inheritance tool,A function returning one value only,An iterator that yields values lazily,A module loader,c
+40,Python,hard,Which built in module helps inspect execution time quickly,math,timeit,typing,pathlib,b
+41,Java,easy,Which keyword is used to create a class in Java,class,struct,object,define,a
+42,Java,easy,Which method is the entry point of a Java program,start,run,main,init,c
+43,Java,easy,Which primitive type stores true or false,bit,bool,boolean,flag,c
+44,Java,easy,Which symbol ends most Java statements,colon,semicolon,comma,period,b
+45,Java,easy,Which collection allows duplicate elements,List,Set,Map,Enum,a
+46,Java,easy,Which keyword is used to inherit a class,implements,extends,inherits,super,b
+47,Java,easy,Which package is imported by default in every Java file,java.io,java.util,java.lang,java.net,c
+48,Java,easy,What does JVM stand for,Java Variable Machine,Java Virtual Machine,Just Virtual Module,Joint Version Manager,b
+49,Java,easy,Which loop is guaranteed to execute at least once,for,while,do while,enhanced for,c
+50,Java,easy,Which access modifier allows visibility within same package without keyword,private,protected,public,default,d
+51,Java,medium,What is method overloading in Java,Same method name different parameters,Same parameters different class,Redefining static field,Calling super constructor,a
+52,Java,medium,Which interface is used for key value pairs,List,Queue,Set,Map,d
+53,Java,medium,Which exception is unchecked in Java,IOException,SQLException,NullPointerException,ClassNotFoundException,c
+54,Java,medium,What is the purpose of the final keyword on a variable,Variable cannot be reassigned,Variable becomes private,Variable is lazy loaded,Variable is synchronized,a
+55,Java,medium,Which stream API operation transforms each element,filter,map,reduce,collect,b
+56,Java,hard,What problem does synchronized help prevent,Memory leak,Race condition,Dead code,Stack overflow,b
+57,Java,hard,Which garbage collector behavior is true,Manual free is required,Objects with no references are eligible for collection,GC runs only at shutdown,GC deletes static methods,b
+58,Java,hard,What is polymorphism in OOP,One class has one method only,Ability to treat child objects as parent type,Creating only abstract classes,Hiding all fields,b
+59,Java,hard,Which class is immutable in Java,String,StringBuilder,ArrayList,HashMap,a
+60,Java,hard,What is the role of Optional in Java,Replace all exceptions,Avoid null checks by representing optional values,Store primitive arrays only,Create threads,b

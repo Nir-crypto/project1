@@ -1,25 +1,5 @@
 id,title,topic,difficulty,description,url
-1,Python Fundamentals,Python,easy,Learn Python syntax variables loops and functions,https://example.com/courses/python-fundamentals
-2,Python OOP in Practice,Python,medium,Build maintainable OOP applications in Python,https://example.com/courses/python-oop
-3,Advanced Python Patterns,Python,hard,Master decorators generators context managers and patterns,https://example.com/courses/advanced-python-patterns
-4,Python for APIs,Python,medium,Create robust REST APIs with Python frameworks,https://example.com/courses/python-for-apis
-5,Python Performance Tuning,Python,hard,Profile optimize and scale Python code,https://example.com/courses/python-performance
-6,Data Structures in Python,Python,medium,Implement core data structures and algorithms in Python,https://example.com/courses/python-data-structures
-7,Automating Tasks with Python,Python,easy,Use Python scripts to automate repetitive workflows,https://example.com/courses/python-automation
-8,Testing Python Applications,Python,hard,Write unit integration and end-to-end tests in Python,https://example.com/courses/python-testing
-9,JavaScript Basics,JavaScript,easy,Understand JS syntax functions arrays and objects,https://example.com/courses/js-basics
-10,Modern JavaScript ES6+,JavaScript,medium,Use modern JavaScript syntax modules and async patterns,https://example.com/courses/js-es6
-11,Advanced JavaScript Concepts,JavaScript,hard,Dive into closures prototypes and event loops,https://example.com/courses/js-advanced
-12,React Essentials,JavaScript,medium,Build reusable UI components with React,https://example.com/courses/react-essentials
-13,Frontend Performance,JavaScript,hard,Optimize rendering bundle size and runtime speed,https://example.com/courses/frontend-performance
-14,JavaScript for APIs,JavaScript,medium,Consume and integrate REST APIs in frontend apps,https://example.com/courses/js-apis
-15,TypeScript for JavaScript Devs,JavaScript,hard,Apply strong typing patterns to JavaScript apps,https://example.com/courses/typescript-devs
-16,DOM and Browser APIs,JavaScript,easy,Manipulate the DOM and work with browser APIs,https://example.com/courses/dom-browser-apis
-17,Data Science Foundations,Data Science,easy,Learn data cleaning exploration and statistical intuition,https://example.com/courses/ds-foundations
-18,Pandas and NumPy,Data Science,medium,Analyze structured data with pandas and numpy,https://example.com/courses/pandas-numpy
-19,Feature Engineering,Data Science,hard,Create robust model-ready features from raw data,https://example.com/courses/feature-engineering
-20,Visualization with Matplotlib,Data Science,easy,Communicate insights through effective plots and charts,https://example.com/courses/data-viz
-21,Machine Learning Intro,Data Science,medium,Train evaluate and improve ML models end-to-end,https://example.com/courses/ml-intro
-22,Model Evaluation and Tuning,Data Science,hard,Use validation metrics and tuning strategies for ML models,https://example.com/courses/model-tuning
-23,Statistics for ML,Data Science,medium,Apply probability and inferential statistics in ML tasks,https://example.com/courses/stats-for-ml
-24,Production ML Workflows,Data Science,hard,Deploy monitor and maintain ML models in production,https://example.com/courses/production-ml
+1,Web Development Foundations,Web Development,easy,Learn HTML CSS JavaScript and responsive layout fundamentals,https://example.com/courses/web-development-foundations
+2,Python Programming Essentials,Python,easy,Build confidence with Python syntax functions data structures and files,https://example.com/courses/python-programming-essentials
+3,Java Programming Essentials,Java,easy,Understand Java syntax OOP collections and exception handling,https://example.com/courses/java-programming-essentials
+4,Web Development Projects,Web Development,medium,Apply frontend and backend concepts in practical web projects,https://example.com/courses/web-development-projects

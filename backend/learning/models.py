@@ -37,6 +37,7 @@ class Question(models.Model):
 
 class AssessmentAttempt(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='assessment_attempts')
+    selected_course = models.ForeignKey('Course', on_delete=models.SET_NULL, null=True, blank=True, related_name='assessment_attempts')
     topic = models.CharField(max_length=100)
     started_at = models.DateTimeField(auto_now_add=True)
     finished_at = models.DateTimeField(null=True, blank=True)
@@ -46,6 +47,7 @@ class AssessmentAttempt(models.Model):
     total_time = models.FloatField(default=0)
     overall_points = models.FloatField(default=0)
     predicted_level = models.CharField(max_length=20, default='Beginner')
+    current_level = models.CharField(max_length=20, default='Beginner')
 
     def __str__(self):
         return f"Attempt {self.id} - {self.user.email}"

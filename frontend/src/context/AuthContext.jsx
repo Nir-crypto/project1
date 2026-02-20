@@ -1,5 +1,5 @@
-import { createContext, useContext, useEffect, useMemo, useState } from 'react';
-import { getCurrentUser, loginUser, logoutUser, registerUser } from '../services/platformService';
+﻿import { createContext, useContext, useEffect, useMemo, useState } from 'react';
+import api from '../api/axios';
 
 const AuthContext = createContext(null);
 
@@ -7,21 +7,19 @@ export function AuthProvider({ children }) {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const isAuthenticated = !!localStorage.getItem('access_token');
-
   const fetchMe = async () => {
     try {
-      const me = await getCurrentUser();
-      setUser(me);
-    } catch (error) {
-      await logout();
+      const res = await api.get('/auth/me');
+      setUser(res.data);
+    } catch {
+      logout();
     } finally {
       setLoading(false);
     }
   };
 
   useEffect(() => {
-    if (isAuthenticated) {
+    if (localStorage.getItem('access_token')) {
       fetchMe();
     } else {
       setLoading(false);
@@ -29,17 +27,20 @@ export function AuthProvider({ children }) {
   }, []);
 
   const login = async (email, password) => {
-    const data = await loginUser(email, password);
-    setUser(data.user);
-    return data;
+    const res = await api.post('/auth/login', { email, password });
+    localStorage.setItem('access_token', res.data.access);
+    localStorage.setItem('refresh_token', res.data.refresh);
+    setUser(res.data.user);
+    return res.data;
   };
 
   const register = async (payload) => {
-    return registerUser(payload);
+    return api.post('/auth/register', payload);
   };
 
-  const logout = async () => {
-    await logoutUser();
+  const logout = () => {
+    localStorage.removeItem('access_token');
+    localStorage.removeItem('refresh_token');
     setUser(null);
   };
 
@@ -61,8 +62,6 @@ export function AuthProvider({ children }) {
 
 export function useAuth() {
   const ctx = useContext(AuthContext);
-  if (!ctx) {
-    throw new Error('useAuth must be used within AuthProvider');
-  }
+  if (!ctx) throw new Error('useAuth must be used within AuthProvider');
   return ctx;
 }
